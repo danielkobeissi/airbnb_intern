@@ -1,5 +1,5 @@
 <!-- header start -->
-<nav class="">
+<nav *ngIf="!isMobile" class="">
   <div class="container-fluid p-3">
     <div class="row ">
       <div class="col-12" id="header">
@@ -21,39 +21,40 @@
     </div>
   </div>  
 
-<div class="flex-caption visible-lg m-5 w-25" id="book">
-  <div class="container p-5">
+<div class="flex-caption visible-lg m-5 " id="book">
+  <div class="container p-4">
     <div>
-      <h3 class="title">
-        <p>Réservez des</p>
-        <p>hébergements et des</p>
-        <p>activités uniques.</p>
-      </h3>
+      <div class="title">
+        <h3 class="fw-bold">
+            Réservez des <br> 
+          hébergements et des<br>
+          activités uniques.
+        </h3>
+      </div>
     </div>
     <div class="d-block mb-2">
-      <label>Où</label>
-      <input type="text" placeholder="Partout">
+      <label class="mt-2 mb-1 fw-bold">Où</label>
+      <input type="text" id="bginput" placeholder="  Partout">
     </div>
     <div class="d-flex" >  
       <div class="d-flex flex-column">
-      <label>Arrivée</label>
-      <input type="text" placeholder="jj/mm/aaaa">
+      <label class="mt-2 mb-1 fw-bold">Arrivée</label>
+      <input type="text" id="sminput" placeholder="  jj/mm/aaaa">
       </div>
       <div class="d-flex flex-column">
-      <label>Depart</label>
-      <input type="text" placeholder="jj/mm/aaaa">
+      <label class="mt-2 mb-1 fw-bold">Depart</label>
+      <input type="text" id="sminput" placeholder="  jj/mm/aaaa">
       </div>
     </div>
-    <div class="d-block mb-2">
-      <label >VOYAGEURS</label>
-      <input type="text" placeholder="VOYAGEURS">
+    <div class="d-block">
+      <label class="mt-2 mb-1 fw-bold">VOYAGEURS</label>
+      <input type="text" id="bginput" placeholder="  VOYAGEURS">
     </div>
-      <div class="form-group">
+      <div class="form-group mt-4">
         <button class="btn btn-danger float-end" type="submit">Rechercher</button>
       </div>
   </div>
 </div>
 </nav>
 <!--header End -->
-
 
