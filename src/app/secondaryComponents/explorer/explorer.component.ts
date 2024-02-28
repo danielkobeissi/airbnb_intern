@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-explorer',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./explorer.component.css']
 })
 export class ExplorerComponent implements OnInit {
-
+  @Input() image: string;
+  @Input() item = '';
   constructor() { }
 
   ngOnInit() {

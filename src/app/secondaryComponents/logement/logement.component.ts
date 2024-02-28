@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-logement',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./logement.component.css']
 })
 export class LogementComponent implements OnInit {
-
+  @Input() image: string;
+  @Input() mount = '';
   constructor() { }
 
   ngOnInit() {
