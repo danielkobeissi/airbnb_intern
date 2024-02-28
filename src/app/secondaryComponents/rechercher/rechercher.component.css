@@ -1,0 +1,35 @@
+
+.hidden {
+    display: none;
+}
+
+
+#book {
+    background-color: white;
+    border-radius: 4px;
+    width: 391px;
+    height: 508px;
+
+}
+
+#bginput {
+    width: 343px;
+    height: 48px;
+}
+
+#sminput {
+    width: 172px;
+    height: 48px;
+
+}
+
+input {
+    margin-bottom: 2px;
+    width: 100%;
+
+}
+
+button {
+    width: 146px;
+    height: 48px;
+}

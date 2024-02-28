@@ -1,0 +1,33 @@
+#dest {
+    position: relative;
+    margin-left: -15px;
+}
+
+#over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 58px;
+    height: 58px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#over1,
+#over2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#over2 {
+    top: 55%;
+}
+
+
+.sejour {
+    color: #914669;
+    font-weight: bold;
+}
