@@ -1,7 +1,20 @@
-<div class="">
-  <img id="aventure" [src]="image">
-  <p class="fw-bold text-secondary"><small>{{country}}</small></p>
-  <h6 class="fw-bold">2 Nights PACKAGE All Inclusive</h6>
-  <small class="">À partir de 577€/personne -<br> 3 jours</small>
-  <div class="text-success fw-bold d-flex align-items-center">5.0<i id="star" class="bi bi-star-fill ms-1"></i></div>
+<div class>
+	<img [src]="aventure.imageUrl"
+		id="aventure">
+	<p class="fw-bold text-secondary">
+		<small>{{aventure.text}}</small>
+	</p>
+	<h6 class="fw-bold">
+		2 Nights PACKAGE All Inclusive
+	</h6>
+	<small class>
+		À partir de 577€/personne -
+		<br>
+		3 jours
+	</small>
+	<div class="text-success fw-bold d-flex align-items-center">
+		5.0
+		<i id="star"
+			class="bi bi-star-fill ms-1"></i>
+	</div>
 </div>

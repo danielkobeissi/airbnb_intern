@@ -7,10 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ExplorerComponent implements OnInit {
   @Input() image: string;
-  @Input() item = '';
+  @Input() explorer = [];
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

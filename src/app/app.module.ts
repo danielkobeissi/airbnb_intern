@@ -10,6 +10,7 @@ import { AventuresComponent } from './secondaryComponents/aventures/aventures.co
 import { LogementComponent } from './secondaryComponents/logement/logement.component';
 import { DestinationComponent } from './secondaryComponents/destination/destination.component';
 import { RechercherComponent } from './secondaryComponents/rechercher/rechercher.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { RechercherComponent } from './secondaryComponents/rechercher/rechercher
   imports: [
     BrowserModule,
     LayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

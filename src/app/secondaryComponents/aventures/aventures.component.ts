@@ -7,7 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AventuresComponent implements OnInit {
   @Input() image: string;
-  @Input() country: string;
+  @Input() aventure = [];
+  @Input() experience = [];
 
   constructor() { }
 

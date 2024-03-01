@@ -1,0 +1,118 @@
+{
+  "explorers": [
+    { 
+      "text": "Logements",
+      "imageUrl": "../../../src/images/explorer1.jpg"
+    },
+    {
+      "text": "Experience",
+      "imageUrl": "../../../src/images/explorer2.jpg"
+    },
+    {
+      "text": "Aventures",
+      "imageUrl": "../../../src/images/explorer3.jpg"
+    }
+  ],
+  "aventures": [
+    { 
+      "text": "CAYMAN ISLANDS",
+      "imageUrl": "../../../src/images/aventure1.jpg"
+    },
+    {
+      "text": "URUGUAY",
+      "imageUrl": "../../../src/images/aventure2.jpg"
+    },
+    {
+      "text": "ICELAND",
+      "imageUrl": "../../../src/images/aventure3.jpg"
+    },
+        { 
+      "text": "MONGOLIA",
+      "imageUrl": "../../../src/images/aventure4.jpg"
+    },
+      { 
+      "text": "BAHRAIN",
+      "imageUrl": "../../../src/images/aventure5.jpg"
+    },
+    {
+      "text": "BOSNIA AND HERZEGOVINA",
+      "imageUrl": "../../../src/images/aventure6.jpg"
+    }
+  ],
+  "logements1": [
+    { 
+      "text": "Toledo",
+      "imageUrl": "../../../src/images/log1.jpg"
+    },
+    {
+      "text": "Mesa",
+      "imageUrl": "../../../src/images/log2.jpg"
+    },
+    {
+      "text": "Utica",
+      "imageUrl": "../../../src/images/log3.jpg"
+    },
+        { 
+      "text": "South Bend",
+      "imageUrl": "../../../src/images/log4.jpg"
+    }
+  ],
+  "logements2":[
+{ 
+      "text": "Toledo",
+      "imageUrl": "../../../src/images/log5.jpg"
+    },
+    {
+      "text": "Mesa",
+      "imageUrl": "../../../src/images/log6.jpg"
+    },
+    {
+      "text": "Utica",
+      "imageUrl": "../../../src/images/log7.jpg"
+    },
+        { 
+      "text": "South Bend",
+      "imageUrl": "../../../src/images/log8.jpg"
+    }
+  ],
+  "experiences": [
+   { 
+      "text": "CAYMAN ISLANDS",
+      "imageUrl": "../../../src/images/exp1.jpg"
+    },
+    {
+      "text": "URUGUAY",
+      "imageUrl": "../../../src/images/exp2.jpg"
+    },
+    {
+      "text": "ICELAND",
+      "imageUrl": "../../../src/images/exp3.jpg"
+    },
+        { 
+      "text": "MONGOLIA",
+      "imageUrl": "../../../src/images/exp4.jpg"
+    },
+      { 
+      "text": "BAHRAIN",
+      "imageUrl": "../../../src/images/exp5.jpg"
+    },
+    {
+      "text": "BOSNIA AND HERZEGOVINA",
+      "imageUrl": "../../../src/images/exp6.jpg"
+    }
+  ],
+  
+  "destinations": [
+    {  
+      "imageUrl": "../../../src/images/dest1.jpg"
+    },
+    { 
+      "imageUrl": "../../../src/images/dest2.jpg"
+    },
+    {
+      "imageUrl": "../../../src/images/dest3.jpg"
+    }
+  ]
+
+}
+

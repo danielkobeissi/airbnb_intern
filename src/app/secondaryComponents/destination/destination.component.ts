@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class DestinationComponent implements OnInit {
   @Input() image: string;
+  @Input() destination = [];
+
   constructor() { }
 
   ngOnInit() {

@@ -1,109 +1,249 @@
-<!--start Explorer Airbnb -->
-<div  class="mt-5 mb-5 container">
-  <h3>Explorer Airbnb</h3>
-  <div class="mt-3">
-        <div class="d-flex justify-content-between">
-          <app-explorer [image]="explorer1" [item]="Item1"></app-explorer>
-          <app-explorer [image]="explorer2" [item]="Item2"></app-explorer>
-          <app-explorer [image]="explorer3" [item]="Item3"></app-explorer>         
-        </div>
-    
-  </div>
+<!-- start Explorer Airbnb -->
+<div class="mt-5 mb-5 container">
+	<h3>Explorer Airbnb</h3>
+	<div class="mt-3">
+		<div class="d-flex justify-content-between">
+			<div *ngFor="let explorer of explorers"
+				class="d-flex justify-content-between">
+				<app-explorer [explorer]="explorer"></app-explorer>
+			</div>
+		</div>
+	</div>
 </div>
-<!--end Explorer Airbnb  -->
+<!-- end Explorer Airbnb -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- start Hébergements Airbnb Plus -->
 <app-hebergements></app-hebergements>
- <!-- end Hébergements Airbnb Plus -->
+<!-- end Hébergements Airbnb Plus -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- start aventures Airbnb -->
-<div class="mt-5 mb-5 container w-100" >
-  <div>
-    <h3>Découvrez les aventures Airbnb</h3>
-    <span> Voyages de plusieurs jours organisés par des experts locaux avec activités, repas</span>
-    <p>et logements compris</p>
-  </div>
-    <div class="d-flex">  
-      <app-aventures [image]="aventure1" [country]="country1"></app-aventures>
-      <div class="ms-2">
-      <app-aventures [image]="aventure2" [country]="country2"></app-aventures>
-      </div>
-      <div class="ms-2">
-        <app-aventures [image]="aventure3" [country]="country3"></app-aventures>
-      </div>
-      <div class="ms-2">
-        <app-aventures [image]="aventure4" [country]="country4"></app-aventures>
-      </div>
-      <div class="ms-2">
-        <app-aventures [image]="aventure5" [country]="country5"></app-aventures>
-      </div>
-      <div class="ms-2">
-        <app-aventures [image]="aventure6" [country]="country6"></app-aventures>
-      </div> 
-    </div>
-  </div>
+<div class="mt-5 mb-5 container w-100">
+	<div>
+		<h3>
+			Découvrez les aventures Airbnb
+		</h3>
+		<span>
+			Voyages de plusieurs jours organisés par des experts locaux avec activités, repas
+		</span>
+		<p>
+			et logements compris
+		</p>
+	</div>
+	<div class="d-flex">
+		<div *ngFor="let aventure of aventures"
+			class="d-flex justify-content-between">
+			<app-aventures [aventure]="aventure"></app-aventures>
+		</div>
+	</div>
+</div>
 <!-- end aventures Airbnb -->
 
-<!-- start logement -->
-<div class="mt-5 mb-5 container" >
-  <div>
-    <h3>Logements dans le monde entier</h3>
-  </div>
-  <div class="d-flex mt-5 justify-content-between">
-    <app-logement [image]="logement1" [mount]="mount1"></app-logement>
-    <app-logement [image]="logement2" [mount]="mount2"></app-logement>
-    <app-logement [image]="logement3" [mount]="mount3"></app-logement>
-    <app-logement [image]="logement4" [mount]="mount4"></app-logement>
-  </div>
 
-  <div class="d-flex mt-5 justify-content-between">
-  <app-logement [image]="logement5" [mount]="mount1"></app-logement>
-  <app-logement [image]="logement6" [mount]="mount2"></app-logement>
-  <app-logement [image]="logement7" [mount]="mount3"></app-logement>
-  <app-logement [image]="logement8" [mount]="mount4"></app-logement>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- start logement -->
+<div class="mt-5 mb-5 container">
+	<div>
+		<h3>
+			Logements dans le monde entier
+		</h3>
+	</div>
+	<div class=" mt-5 d-flex justify-content-between">
+		<div *ngFor="let logement of logements1">
+			<app-logement [logement]="logement"></app-logement>
+		</div>
+	</div>
+	<div class=" mt-5 d-flex justify-content-between ">
+		<div *ngFor="let logement2 of logements2">
+			<app-logement [logement]="logement2"></app-logement>
+		</div>
+	</div>
 </div>
-  <!-- end logement -->
+<!-- end logement -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- start experience -->
-  <div class="mt-5 mb-5 container " >
-    <div>
-      <h3>Expériences très bien notées</h3>
-      <span> Voyages de plusieurs jours organisés par des experts locaux avec activités, repas</span>
-      <p>et logements compris</p>
-    </div>
-  <div class="d-flex">
-    <app-aventures [image]="experience1" [country]="country1"></app-aventures>
-    <div class="ms-2">
-      <app-aventures [image]="experience2" [country]="country2"></app-aventures>
-    </div>
-    <div class="ms-2">
-      <app-aventures [image]="experience3" [country]="country3"></app-aventures>
-    </div>
-    <div class="ms-2">
-      <app-aventures [image]="experience4" [country]="country4"></app-aventures>
-    </div>
-    <div class="ms-2">
-      <app-aventures [image]="experience5" [country]="country5"></app-aventures>
-    </div>
-    <div class="ms-2">
-      <app-aventures [image]="experience6" [country]="country6"></app-aventures>
-    </div>
-  </div>
-  </div>
+<div class="mt-5 mb-5 container ">
+	<div>
+		<h3>
+			Expériences très bien notées
+		</h3>
+		<span>
+			Voyages de plusieurs jours organisés par des experts locaux avec activités, repas
+		</span>
+		<p>
+			et logements compris
+		</p>
+	</div>
+	<div class="d-flex">
+		<div *ngFor="let experience of experiences"
+			class="d-flex justify-content-between">
+			<app-aventures [aventure]="experience"></app-aventures>
+		</div>
+	</div>
+</div>
 <!-- end experience -->
 
+
+
+
+
+
+
+
+
+
+
+
 <!-- start destination -->
-<div class="mt-5 mb-5 container " >
-  <div>
-    <h3>Destinations Airbnb Plus à la Une</h3>
-    <span> Voyages de plusieurs jours organisés par des experts locaux avec activités, repas</span>
-    <p>et logements compris</p>
-  </div>
-  <div class="d-flex mt-5 justify-content-between">
-  <app-destination [image]="destination1"></app-destination>
-  <app-destination [image]="destination2"></app-destination>
-  <app-destination [image]="destination3"></app-destination>
-  </div>
+<div class="mt-5 mb-5 container ">
+	<div>
+		<h3>
+			Destinations Airbnb Plus à la Une
+		</h3>
+		<span>
+			Voyages de plusieurs jours organisés par des experts locaux avec activités, repas
+		</span>
+		<p>
+			et logements compris
+		</p>
+	</div>
+	<div class="d-flex mt-5 justify-content-between">
+		<div *ngFor="let destination of destinations">
+			<app-destination [destination]="destination"></app-destination>
+		</div>
+	</div>
 </div>
 <!-- end destination -->
