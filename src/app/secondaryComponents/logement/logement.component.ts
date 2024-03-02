@@ -8,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class LogementComponent implements OnInit {
   @Input() image: string;
   @Input() logement = [];
-  @Input() logement2 = [];
 
   constructor() { }
 
