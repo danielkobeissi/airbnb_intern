@@ -33,3 +33,18 @@ button {
     width: 146px;
     height: 48px;
 }
+
+  input::placeholder {
+    font-style: italic;
+  }
+  
+  button {
+    margin-left: -45px; /* Adjust based on your design preference */
+  }
+
+  
+  @media (min-width: 601px) {
+    .mobile-search-bar {
+      display: none;
+    }
+  }

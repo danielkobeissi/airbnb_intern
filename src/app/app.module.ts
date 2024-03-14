@@ -11,7 +11,10 @@ import { LogementComponent } from './secondaryComponents/logement/logement.compo
 import { DestinationComponent } from './secondaryComponents/destination/destination.component';
 import { RechercherComponent } from './secondaryComponents/rechercher/rechercher.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +26,16 @@ import { HttpClientModule } from '@angular/common/http';
     LogementComponent,
     DestinationComponent,
     RechercherComponent,
+
   ],
   imports: [
     BrowserModule,
     LayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule, 
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
